@@ -1,7 +1,21 @@
-<ul>
-    <li *ngFor="#person of persons"> {{person.name}} {{person.lastname}} {{person.id}} </li>
-</ul>
-<div *ngIf="persons.length">
-    <h2> სულ არის {{persons.length}} ტიპი </h2>
-</div>
-{{persons | json}}
+
+
+<!--<ul>-->
+    <!--<li *ngFor="#person of persons"> {{person.name}} {{person.lastname}} {{person.id}} </li>-->
+<!--</ul>-->
+<!--<div *ngIf="persons.length">-->
+    <!--<h2> სულ არის {{persons.length}} ტიპი </h2>-->
+<!--</div>-->
+<!--{{persons | json}}-->
+
+    <h3>{{title}}</h3>
+    <div>
+        2 Way Binding
+        <input [(ngModel)]="persons.name">
+    </div>
+    <p>{{persons.name}}</p>
+    <div>
+        1 Way Binding
+        <input [value]="title">
+    </div>
+    {{persons | json}}

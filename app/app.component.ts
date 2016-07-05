@@ -11,4 +11,6 @@ export class AppComponent {
         { name: 'guja', lastname: 'mesxi', id:'3' },
         { name: 'kekela', lastname: 'pantani', id:'4' },
     ];
+    title = 'test angular 2 title'
+
 }
