@@ -13,9 +13,9 @@ import { Component } from '@angular/core';
 //     ];
 // }
 export class AppComponent {
-    clickMessage = '';
+    values = '';
 
-    onClickMe() {
-        this.clickMessage = 'You are my hero!';
+    onKey(event:any) {
+        this.values += event.target.value + ' | ';
     }
 }

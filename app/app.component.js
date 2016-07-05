@@ -11,10 +11,10 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require('@angular/core');
 var AppComponent = (function () {
     function AppComponent() {
-        this.clickMessage = '';
+        this.values = '';
     }
-    AppComponent.prototype.onClickMe = function () {
-        this.clickMessage = 'You are my hero!';
+    AppComponent.prototype.onKey = function (event) {
+        this.values += event.target.value + ' | ';
     };
     AppComponent = __decorate([
         core_1.Component({
