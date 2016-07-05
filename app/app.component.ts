@@ -13,9 +13,10 @@ import { Component } from '@angular/core';
 //     ];
 // }
 export class AppComponent {
-    values = '';
-
-    onKey(event:any) {
-        this.values += event.target.value + ' | ';
+    heroes = ['Windstorm', 'Bombasto', 'Magneta', 'Tornado'];
+    addHero(newHero: string) {
+        if (newHero) {
+            this.heroes.push(newHero);
+        }
     }
 }

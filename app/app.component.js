@@ -11,10 +11,12 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require('@angular/core');
 var AppComponent = (function () {
     function AppComponent() {
-        this.values = '';
+        this.heroes = ['Windstorm', 'Bombasto', 'Magneta', 'Tornado'];
     }
-    AppComponent.prototype.onKey = function (event) {
-        this.values += event.target.value + ' | ';
+    AppComponent.prototype.addHero = function (newHero) {
+        if (newHero) {
+            this.heroes.push(newHero);
+        }
     };
     AppComponent = __decorate([
         core_1.Component({
