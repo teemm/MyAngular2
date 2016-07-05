@@ -1,0 +1,7 @@
+<ul>
+    <li *ngFor="#person of persons"> {{person.name}} {{person.lastname}} {{person.id}} </li>
+</ul>
+<div *ngIf="persons.length">
+    <h2> სულ არის {{persons.length}} ტიპი </h2>
+</div>
+{{persons | json}}
