@@ -140,3 +140,12 @@ nav a.router-link-active {
 * { 
   font-family: Arial, Helvetica, sans-serif; 
 }
+/*form*/
+.ng-valid[required] {
+  border-left: 5px solid #42A948; /* green */
+}
+
+.ng-invalid {
+  border-left: 5px solid #a94442; /* red */
+}
+/*form*/

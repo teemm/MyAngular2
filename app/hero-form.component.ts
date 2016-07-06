@@ -1,0 +1,30 @@
+import { Component } from '@angular/core';
+// import { NgForm }    from '@angular/common';
+import { Hero }    from './hero';
+@Component({
+    selector: 'hero-form',
+    templateUrl: 'app/hero-form.component.html'
+})
+export class HeroFormComponent {
+    powers = ['xerxva of Ala', 'Super Flexible',
+        'Super Hot', 'Weather Changer'];
+
+
+    model = new Hero(18, 'Mr.galkin', this.powers[0], 'mihkeil tsankashvili');
+
+    submitted = false;
+
+
+    onSubmit() { this.submitted = true; }
+    // TODO: Remove this when we're done
+    get diagnostic() { return JSON.stringify(this.model); }
+
+    active = true;
+
+    newHero() {
+        this.model = new Hero(42, '', '');
+        this.active = false;
+        setTimeout(() => this.active = true, 0);
+    }
+
+}
